@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel1butt = new System.Windows.Forms.Button();
             this.panel2butt = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.Out1 = new System.Windows.Forms.TextBox();
+            this.panel1butt = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.Out2 = new System.Windows.Forms.TextBox();
+            this.Out1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.userControl11 = new WindowsFormsApplication1.UserControl1();
             this.panel11 = new WindowsFormsApplication1.panel1();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -60,6 +60,36 @@
             this.panel1.Size = new System.Drawing.Size(137, 373);
             this.panel1.TabIndex = 0;
             // 
+            // panel2butt
+            // 
+            this.panel2butt.Location = new System.Drawing.Point(29, 128);
+            this.panel2butt.Name = "panel2butt";
+            this.panel2butt.Size = new System.Drawing.Size(75, 23);
+            this.panel2butt.TabIndex = 2;
+            this.panel2butt.Text = "Panel Two";
+            this.panel2butt.UseVisualStyleBackColor = true;
+            this.panel2butt.Click += new System.EventHandler(this.panel2butt_Click);
+            // 
+            // panel1butt
+            // 
+            this.panel1butt.Location = new System.Drawing.Point(29, 99);
+            this.panel1butt.Name = "panel1butt";
+            this.panel1butt.Size = new System.Drawing.Size(75, 23);
+            this.panel1butt.TabIndex = 1;
+            this.panel1butt.Text = "Panel One";
+            this.panel1butt.UseVisualStyleBackColor = true;
+            this.panel1butt.Click += new System.EventHandler(this.panel1butt_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(29, 70);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Home";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -74,45 +104,37 @@
             this.panel2.Size = new System.Drawing.Size(130, 373);
             this.panel2.TabIndex = 1;
             // 
-            // button1
+            // Out2
             // 
-            this.button1.Location = new System.Drawing.Point(29, 70);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Home";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Out2.Location = new System.Drawing.Point(22, 154);
+            this.Out2.Name = "Out2";
+            this.Out2.Size = new System.Drawing.Size(100, 20);
+            this.Out2.TabIndex = 4;
             // 
-            // panel1butt
+            // Out1
             // 
-            this.panel1butt.Location = new System.Drawing.Point(29, 99);
-            this.panel1butt.Name = "panel1butt";
-            this.panel1butt.Size = new System.Drawing.Size(75, 23);
-            this.panel1butt.TabIndex = 1;
-            this.panel1butt.Text = "Panel One";
-            this.panel1butt.UseVisualStyleBackColor = true;
-            this.panel1butt.Click += new System.EventHandler(this.panel1butt_Click);
+            this.Out1.Location = new System.Drawing.Point(22, 96);
+            this.Out1.Name = "Out1";
+            this.Out1.Size = new System.Drawing.Size(100, 20);
+            this.Out1.TabIndex = 3;
             // 
-            // panel2butt
+            // label4
             // 
-            this.panel2butt.Location = new System.Drawing.Point(29, 128);
-            this.panel2butt.Name = "panel2butt";
-            this.panel2butt.Size = new System.Drawing.Size(75, 23);
-            this.panel2butt.TabIndex = 2;
-            this.panel2butt.Text = "Panel Two";
-            this.panel2butt.UseVisualStyleBackColor = true;
-            this.panel2butt.Click += new System.EventHandler(this.panel2butt_Click);
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(19, 138);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 13);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Input Two";
             // 
-            // label1
+            // label3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(143, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(335, 25);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "User Control Panel Application";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(19, 80);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Input One:";
             // 
             // label2
             // 
@@ -124,37 +146,15 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Data:";
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 80);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Input One:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 138);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Input Two";
-            // 
-            // Out1
-            // 
-            this.Out1.Location = new System.Drawing.Point(22, 96);
-            this.Out1.Name = "Out1";
-            this.Out1.Size = new System.Drawing.Size(100, 20);
-            this.Out1.TabIndex = 3;
-            // 
-            // Out2
-            // 
-            this.Out2.Location = new System.Drawing.Point(22, 154);
-            this.Out2.Name = "Out2";
-            this.Out2.Size = new System.Drawing.Size(100, 20);
-            this.Out2.TabIndex = 4;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(143, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(335, 25);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "User Control Panel Application";
             // 
             // userControl11
             // 
